@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<XMI verified="false" xmi.version="1.2" timestamp="2021-05-19T21:30:40" xmlns:UML="http://schema.omg.org/spec/UML/1.4">
+<XMI verified="false" xmi.version="1.2" timestamp="2021-05-21T22:11:19" xmlns:UML="http://schema.omg.org/spec/UML/1.4">
  <XMI.header>
   <XMI.documentation>
    <XMI.exporter>umbrello uml modeller http://umbrello.kde.org</XMI.exporter>
@@ -37,11 +37,27 @@
         <UML:DataType visibility="public" isSpecification="false" namespace="Datatypes" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uSG0PTuo8PAKz" name="StringBuilder"/>
        </UML:Namespace.ownedElement>
       </UML:Package>
+      <UML:Class visibility="public" isSpecification="false" namespace="Logical_View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uDXVvftSrOjLA" name="Tablero">
+       <UML:Classifier.feature>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uyQHdhZJ4qz0V" isOverride="false" name="crearJugadores" isInline="false" isVirtual="false"/>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="ukIvdjKpEIAPM" isOverride="false" name="crearJuego" isInline="false" isVirtual="false"/>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uTdP93XP46NBd" isOverride="false" name="verificarCartas" isInline="false" isVirtual="false">
+         <UML:BehavioralFeature.parameter>
+          <UML:Parameter kind="return" xmi.id="uJSOEp2LT2ik2" type="uGnQGWfx0fd5q"/>
+         </UML:BehavioralFeature.parameter>
+        </UML:Operation>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="umn880Gulx32q" isOverride="false" name="cambiarTurno" isInline="false" isVirtual="false"/>
+       </UML:Classifier.feature>
+      </UML:Class>
      </UML:Namespace.ownedElement>
      <XMI.extension xmi.extender="umbrello">
       <diagrams resolution="96">
-       <diagram showopsig="1" linecolor="#ff0000" snapx="25" showattribassocs="1" snapy="25" linewidth="0" showattsig="1" textcolor="#000000" isopen="1" showpackage="1" showpubliconly="1" showstereotype="1" name="diagrama de clases" font="Sans Serif,9,-1,0,50,0,0,0,0,0" canvasheight="0" canvaswidth="0" localid="-1" snapcsgrid="0" showgrid="0" showops="1" griddotcolor="#f6f6f6" backgroundcolor="#ffffff" usefillcolor="1" fillcolor="#ffffc0" zoom="100" xmi.id="uZUeonmbiOZra" documentation="" showscope="1" snapgrid="0" showatts="1" type="1">
-        <widgets/>
+       <diagram showopsig="1" linecolor="#ff0000" snapx="25" showattribassocs="1" snapy="25" linewidth="0" showattsig="1" textcolor="#000000" isopen="1" showpackage="1" showpubliconly="1" showstereotype="1" name="diagrama de clases" font="Sans Serif,9,-1,0,50,0,0,0,0,0" canvasheight="235" canvaswidth="329" localid="-1" snapcsgrid="0" showgrid="0" showops="1" griddotcolor="#f6f6f6" backgroundcolor="#ffffff" usefillcolor="1" fillcolor="#ffffc0" zoom="100" xmi.id="uZUeonmbiOZra" documentation="" showscope="1" snapgrid="0" showatts="1" type="1">
+        <widgets>
+         <classwidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="0" textcolor="#000000" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="1" showpackage="1" x="-419" showattsigs="601" showstereotype="1" y="-464" showattributes="1" font="Sans Serif,9,-1,0,50,0,0,0,0,0" localid="uGF3PZnaWML9d" width="162" isinstance="0" usefillcolor="1" fillcolor="#ffffc0" xmi.id="uDXVvftSrOjLA" autoresize="1" showscope="1" height="82" showopsigs="601"/>
+         <floatingtext linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="0" textcolor="#000000" usesdiagramusefillcolor="0" x="-224" showstereotype="1" y="-617" text="Amarilo = Proyecto" font="Sans Serif,9,-1,0,50,0,0,0,0,0" localid="uFnZoh75txjd2" pretext="" role="700" width="110" isinstance="0" posttext="" usefillcolor="1" fillcolor="#ffffc0" xmi.id="u7RYN5ExpYo1E" autoresize="1" height="19"/>
+         <floatingtext linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="0" textcolor="#000000" usesdiagramusefillcolor="0" x="-224" showstereotype="1" y="-585" text="Azul = Librerias de java" font="Sans Serif,9,-1,0,50,0,0,0,0,0" localid="ueRJ8jWo36bPU" pretext="" role="700" width="134" isinstance="0" posttext="" usefillcolor="1" fillcolor="#ffffc0" xmi.id="u6O0RvGoJWDEi" autoresize="1" height="19"/>
+        </widgets>
         <messages/>
         <associations/>
        </diagram>
@@ -64,15 +80,13 @@
   </UML:Model>
  </XMI.content>
  <XMI.extensions xmi.extender="umbrello">
-  <docsettings viewid="uZUeonmbiOZra" uniqueid="uSG0PTuo8PAKz" documentation=""/>
+  <docsettings viewid="uZUeonmbiOZra" uniqueid="uJSOEp2LT2ik2" documentation=""/>
   <listview>
    <listitem open="1" type="800" id="Views">
-    <listitem open="1" type="836" id="Entity_Relationship_Model"/>
-    <listitem open="1" type="802" id="Use_Case_View"/>
     <listitem open="1" type="821" id="Component_View"/>
     <listitem open="1" type="827" id="Deployment_View"/>
+    <listitem open="1" type="836" id="Entity_Relationship_Model"/>
     <listitem open="1" type="801" id="Logical_View">
-     <listitem open="0" type="807" id="uZUeonmbiOZra" label="diagrama de clases"/>
      <listitem open="0" type="830" id="Datatypes">
       <listitem open="0" type="829" id="uuqq1IU2AFoga"/>
       <listitem open="0" type="829" id="uGnQGWfx0fd5q"/>
@@ -94,7 +108,15 @@
       <listitem open="0" type="829" id="uTi4QX9isLZro"/>
       <listitem open="0" type="829" id="uSG0PTuo8PAKz"/>
      </listitem>
+     <listitem open="0" type="807" id="uZUeonmbiOZra" label="diagrama de clases"/>
+     <listitem open="1" type="813" id="uDXVvftSrOjLA">
+      <listitem open="0" type="815" id="umn880Gulx32q"/>
+      <listitem open="0" type="815" id="ukIvdjKpEIAPM"/>
+      <listitem open="0" type="815" id="uyQHdhZJ4qz0V"/>
+      <listitem open="0" type="815" id="uTdP93XP46NBd"/>
+     </listitem>
     </listitem>
+    <listitem open="1" type="802" id="Use_Case_View"/>
    </listitem>
   </listview>
   <codegeneration>
