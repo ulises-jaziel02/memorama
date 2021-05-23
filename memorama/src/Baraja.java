@@ -20,14 +20,12 @@ public class Baraja {
     
     public void ObtenerCartas()
     {
-        int i=0; 
         //Obteniendo cartas
         String[] imagen = img.getImagenes();
         cartas = new Cartas[img.getCantidadImagenes()*2];
-        while(i==cartas.length)
+        for(int i=0; i<cartas.length; i++)
         {
-            cartas[i] = new Cartas(i);
-            i++;
+            cartas[i] = new Cartas(i); 
         }
     }
     
