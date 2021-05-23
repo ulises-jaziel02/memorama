@@ -13,6 +13,7 @@ public class Baraja {
     
     public Baraja()
     {
+        //Funciones de Baraja
         ObtenerCartas();
         RevolverCartas();
     }
