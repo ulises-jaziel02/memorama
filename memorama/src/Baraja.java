@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 
@@ -32,7 +33,9 @@ public class Baraja {
     public void RevolverCartas()
     {
         //Revolviendo Cartas
-        
+                 
+        List<Cartas> values = Arrays.asList((cartas));
+        Collections.shuffle(values);
     }
     
     public Cartas[] getCartas()
