@@ -60,17 +60,17 @@ public class Tablero {
         }
     }
 
-    public void resizeImage(Cartas carta,int width,int height) {                
+    public void escalarIcono(Cartas carta,int width,int height) {                
         ImageIcon imageIcon = new ImageIcon(carta.getImagen());
-        Image image = imageIcon.getImage(); // transform it 
-        Image newimg = image.getScaledInstance(width, height,  java.awt.Image.SCALE_SMOOTH); // scale it the smooth way  
-        imageIcon = new ImageIcon(newimg); 
+        Image iconoActual = imageIcon.getImage(); 
+        Image nuevoIcono = iconoActual.getScaledInstance(width, height,  java.awt.Image.SCALE_SMOOTH);  
+        imageIcon = new ImageIcon(nuevoIcono); 
         carta.setIcono(imageIcon);
         
         imageIcon = new ImageIcon(carta.getImagenTapada());
-        image = imageIcon.getImage(); // transform it 
-        newimg = image.getScaledInstance(width, height,  java.awt.Image.SCALE_SMOOTH); // scale it the smooth way  
-        imageIcon = new ImageIcon(newimg); 
+        iconoActual = imageIcon.getImage(); // transform it 
+        nuevoIcono = iconoActual.getScaledInstance(width, height,  java.awt.Image.SCALE_SMOOTH); 
+        imageIcon = new ImageIcon(nuevoIcono); 
         carta.setIconoTapado(imageIcon);                        
     }
     
