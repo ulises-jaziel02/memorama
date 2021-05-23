@@ -1,3 +1,5 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -8,7 +10,7 @@ import java.util.List;
  * @author Uriel Jimenez Zempoalteca
  */
 
-public class Baraja {
+public class Baraja implements ActionListener{
     private Cartas[] cartas;
     private Imagenes img; 
     
@@ -55,4 +57,12 @@ public class Baraja {
         return cartas; 
     }
     
+    public Cartas consultaCarta(int i) {
+        return cartas[i];
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
