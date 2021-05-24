@@ -5,7 +5,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 
 /**
- *
+ * Define los objetos que indican el estado de las cartas en el tablero
  * @author Aarón
  */
 public class Cartas extends JButton implements ActionListener {
@@ -17,7 +17,10 @@ public class Cartas extends JButton implements ActionListener {
     private ImageIcon icono;
     private ImageIcon iconoTapado;    
 
-    
+/**
+ * 
+ * @param id El parametro id define el identificador de la carta
+ */  
     public Cartas(int id) {        
         this.id = id;
         this.destapado=false;
@@ -26,7 +29,10 @@ public class Cartas extends JButton implements ActionListener {
         addActionListener(this);
     }
 
-
+/**
+ * Metodo que valida las acciones que hagan los usuarios y compara las cartas seleccionadas
+ * @param e parametro que recibe la accion del usauario
+ */
     @Override
     public void actionPerformed(ActionEvent e) {  
         
